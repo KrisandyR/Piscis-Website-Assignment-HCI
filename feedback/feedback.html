@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Feedback</title>
+    <link rel="stylesheet" href="feedback_style.css">
+    <script type="text/javascript" src="feedback_script.js"></script>
+    <link rel="icon" type="image/x-icon" href="../resource/favicon.png">
+<body>
+    
+    <header>
+        <div id = "header_logo">
+            <a href="../home/home.html">Piscis</a>
+        </div>
+
+        <div id = "navigation_bar">
+            <div class = "nav_bar_btn">
+                <a href="../home/home.html">Home</a>
+            </div>
+            <div class = "nav_bar_btn" id = "directory_drop_down">
+                <a id = "drop_down_btn" href="">
+                    Directories
+                </a>
+                <div id = "drop_down_list">
+                    <a href="../marine_animal/ocean_fish.html">Ocean Fish</a>
+                    <a href="../marine_animal/sharks.html">Sharks</a>
+                    <a href="../marine_animal/sea_turtles.html">Sea Turtles</a>
+                    <a href="../marine_animal/marine_mammals.html">Marine Mammals</a>
+                    <a href="../marine_animal/sea_birds.html">Sea Birds</a>
+                    <a href="../marine_animal/corals.html">Corals</a>
+                </div>
+            </div>
+            <div class = "nav_bar_btn">
+                <a href="../feedback/feedback.html">Feedback</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <h1 id = "page_title">
+            Send Feedback
+        </h1>
+
+        <div id = "feedback_container">
+
+            <form id = "register_form" name="register">
+
+                <div class = "input_container">
+                    <label>Name</label>
+                    <input name="name" placeholder="John Doe">
+                    <div id="error1" class = "error_msg"></div>
+                </div>
+
+                <div class = "input_container">
+                    <label>Phone Number</label>
+                    <input name="phone_number" placeholder="08XXXXXXXX">
+                    <div id="error2" class = "error_msg"></div>
+                </div>
+
+                <div class = "input_container">
+                    <label>E-mail</label>
+                    <input name="email" placeholder="johndoe@gmail.com">
+                    <div id="error3" class = "error_msg"></div>
+                </div>
+
+                <div class = "input_container">
+                    <label>Gender</label>
+                    <div id = "radio_container">
+                        <input id="radio1" type="radio" name="gender" value="Male">
+                        <p>Male</p>
+                        <input id="radio2" type="radio" name="gender" value="Female">
+                        <p>Female</p>
+                    </div>
+                    <div id="error4" class = "error_msg"></div>
+                </div>
+
+                <div class = "input_container">
+                    <label>Feedback</label>
+                    <textarea name="feedback" id="feedback_box" cols="30" rows="10"></textarea>
+                    <div id="error5" class = "error_msg"></div>
+                </div>
+
+                <div id="submit_btn">
+                    <input type="button" value="Send Feedback" onclick="validate()">
+                </div>
+            </form>
+
+    </main>
+
+    <footer>
+
+        <p>Find Us</p>
+
+        <ul id = "footer_icon_list">
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <img id="twitter_img" src="../resource/twitter_icon.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img id="facebook_img" src="../resource/facebook_icon.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img id="instagram_img" src="../resource/instagram_icon.png" alt="">
+                </a>
+            </li>
+        </ul>
+
+        <p id = "copy">
+            Copyright 2022 : Krisandy Rivera
+        </p>
+    </footer>
+
+</body>
+</html>
